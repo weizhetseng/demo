@@ -8,45 +8,50 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <style>
-        .container {
-            width: 80%;
-            margin: auto;
+        .mySwiper3 {
+            height: 100vh;
+        }
+
+        .mySwiper2 {
+            height: 700px;
+        }
+
+        .mySwiper {
+            height: 500px;
         }
 
         img {
             width: 100%;
         }
 
-        .mySwiper3 .swiper-wrapper {
-            height: 1000px;
+        .mySwiper2 .swiper-slide img {
+            width: 100%;
         }
 
-        .mySwiper2 .swiper-wrapper {
-            height: 250px;
-            margin-bottom: 50px;
+        .mySwiper .swiper-slide img {
+            width: 100%;
         }
 
-        .mySwiper .swiper-wrapper {
-            height: 300px;
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
         }
 
-        .mySwiper5 .swiper-wrapper {
-            height: 250px;
-            margin-bottom: 50px;
-        }
-
-        .mySwiper4 .swiper-wrapper {
-            height: 300px;
-        }
-
-        .mySwiper7 .swiper-wrapper {
-            height: 250px;
-            margin-bottom: 50px;
-        }
-
-        .mySwiper6 .swiper-wrapper {
-            height: 300px;
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -56,15 +61,18 @@
         <div style="--swiper-navigation-color: red; --swiper-pagination-color: red" class="swiper mySwiper3">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <p>第一張</p>
+
                     <div class="swiper mySwiper2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <iframe width="100%" height="250px" src="https://www.youtube.com/embed/GibiNy4d4gc"
-                                    title="Carmen Twillie, Lebo M. - Circle Of Life (Official Video from " The Lion
-                                    King")" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                <div class="video-container">
+                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/GibiNy4d4gc"
+                                        title="Carmen Twillie, Lebo M. - Circle Of Life (Official Video from " The Lion
+                                        King")" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+
 
                             </div>
                             <div class="swiper-slide">
@@ -97,16 +105,20 @@
 
                 </div>
                 <div class="swiper-slide">
-                    <p>第二張</p>
+
                     <div class="swiper-slide">
                         <div class="swiper mySwiper5">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/rJYqUq6b240"
-                                        title="[無廣告版] 誠品音樂集~ 舒服音樂為自己挑本好書 ~ RELAX BOOK SHOP MUSIC FOR STUDYING & READING"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                    <div class="video-container">
+                                        <iframe width="100%" height="250px"
+                                            src="https://www.youtube.com/embed/rJYqUq6b240"
+                                            title="[無廣告版] 誠品音樂集~ 舒服音樂為自己挑本好書 ~ RELAX BOOK SHOP MUSIC FOR STUDYING & READING"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="caleb-jack-IfO65r2Jaj0-unsplash.jpg" />
@@ -139,18 +151,21 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <p>第三張</p>
+
                     <div class="swiper-slide">
                         <div class="swiper-slide">
                             <div class="swiper mySwiper7">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <iframe width="100%" height="250px"
-                                            src="https://www.youtube.com/embed/GibiNy4d4gc"
-                                            title="Carmen Twillie, Lebo M. - Circle Of Life (Official Video from " The
-                                            Lion King")" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
+                                        <div class="video-container">
+                                            <iframe width="100%" height="250px"
+                                                src="https://www.youtube.com/embed/GibiNy4d4gc"
+                                                title="Carmen Twillie, Lebo M. - Circle Of Life (Official Video from "
+                                                The Lion King")" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+
                                     </div>
                                     <div class="swiper-slide">
                                         <img src="marek-piwnicki-EmJy3_FV1ZI-unsplash.jpg" />
@@ -189,7 +204,9 @@
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@5/dist/YouTubeToHtml5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
